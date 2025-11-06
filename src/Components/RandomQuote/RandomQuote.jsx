@@ -68,6 +68,7 @@ const RandomQuote = () =>{
         : '#';
 
     const [shareNotice, setShareNotice] = useState(null);
+    const [shareLoading, setShareLoading] = useState(false);
 
     const onInstagramShare = async () => {
         const text = `"${quote.text}" ${quote.author || ''}`;
